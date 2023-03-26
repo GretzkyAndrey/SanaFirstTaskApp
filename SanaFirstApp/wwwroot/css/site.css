@@ -1,0 +1,16 @@
+.center-outer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.center-inner {
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+button {
+    b-align: center;
+}
