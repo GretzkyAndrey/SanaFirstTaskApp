@@ -1,7 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<style>
+    .center-inner {
+        text-align: center;
+    }
+
+        .center-inner h1 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .center-inner input[type="text"] {
+            display: block;
+            margin: 0 auto;
+        }
+</style>
+
+
 <form class="center-inner" method="get">
-        <h1>Enter name</h1>
-        <h1><input type="text" required id="name" name="name"> <button type="submit" class="btn btn-primary">Enter</button></h1>
-    </form>
+    <h1>Enter name</h1>
+    <h1><input type="text" required id="name" name="name"> <button type="submit" class="btn btn-primary">Enter</button></h1>
+</form>
