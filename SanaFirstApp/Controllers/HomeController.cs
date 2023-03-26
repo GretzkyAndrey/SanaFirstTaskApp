@@ -4,18 +4,18 @@ namespace SanaFirstApp.Controllers
 {
     [Route("[controller]")]
     [Route("")]
-    public class HomeControllerAndrey : Controller
+    public class HomeController : Controller
     {
         public IActionResult Index(string name)
         {
             if (name != null)
             {
                 
-                return View("Views/EmoH/Result.cshtml", new UsenameViewModel() { UsenameView = name });
+                return View("Views/Home/Result.cshtml", new UsernameViewModel() { UsernameView = name });
 
             }
 
-            return View("Views/EmoH/index.cshtml");
+            return View("Views/Home/index.cshtml");
         }
     }
 }
